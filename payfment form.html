@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="whole">
+    <div>
+        <form action="container">
+            <h1 class="main_heading"> Payment form</h1>
+            <p> Required fields are fooloed by *</p>
+            <h2>Contact information</h2>
+
+            <p class="name">Name *<input type="text" name="name" placeholder="your name"></p>
+            <label>
+                <fieldset>
+                    <legend>Gender*</legend>
+                    <p>
+                        Male <input type="radio" name="gender" id="gender" required>
+                        female <input type="radio" name="gender" id="gender" required>
+                    </p>
+                </fieldset>
+            </label>
+            <p>Address *<textarea name="Address" id="Address" rows="5" required></textarea></p>
+            <p> Email *<input type="email" name="email" id="email" required></p>
+            <p> Pincode* <input type="password" name="pincode" id="pincode" required></p>
+            <h2> payment information</h2>
+            <p> Card type *
+                <select name="card_type" id="card_type" required>
+                    <option value="">---Select a Card type---</option>
+                    <option value="visa">Visa</option>
+                    <option value="rupay">rupay</option>
+                    <option value="mastercard">mastercard</option>
+                </select>
+            </p>
+            <p> card number <input type="number" name="card_number" id="card_number" required></p>
+            <p> Expiration Date <input type="date" name="exp_date" id="exp_date" required></p>
+            <div class="button">
+                <input type="submit" value="pay now">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+
+</html>
